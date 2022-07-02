@@ -22,8 +22,8 @@ export default function Navbar() {
             </li>
             <li className="icon-set" onClick={handleClick}>
               <a href="#">
-                <i className='bx bxs-cart icon' ></i>
-                <p>Cart</p>
+                <i className='bx bxs-cookie icon' ></i>
+                <p>Gallery</p>
               </a>
             </li>
             <li>
@@ -31,16 +31,16 @@ export default function Navbar() {
             </li>
             <li className="icon-set" onClick={handleClick}>
               <a href="#">
-                <i className='bx bxs-cookie icon' ></i>
-                <p>Gallery</p>
-              </a>
-            </li>
-            <li className="icon-set" onClick={handleClick}>
-              <a href="#">
                 <i className='bx bxs-heart icon' ></i>
                 <p>Contact</p>
               </a>
             </li>
+            <li className="icon-set" onClick={handleClick}>
+              <a href="#">
+                <i className='bx bxs-cart icon' ></i>
+                <p>Cart</p>
+              </a>
+            </li>            
           </ul>
         </nav>
     )
