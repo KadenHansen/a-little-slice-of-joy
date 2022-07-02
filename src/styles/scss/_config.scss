@@ -4,5 +4,12 @@ $joy-white: #f2f2f2;
 $primary-purple: #a33d55;
 $secondary-purple: #612642;
 
+// FONT STACK
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');;
+$font-standard: 'Open Sans', sans-serif;
+$weight-light: 300;
+$weight-standard: 400;
+$weight-bolded: 700;
+
 // SIZE VARIABLES
 $navHeight: 3rem;

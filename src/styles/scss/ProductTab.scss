@@ -1,0 +1,29 @@
+@import "config";
+
+.product-tab {
+    padding: 2rem;
+    display: flex;
+
+    img {
+        border-radius: 0.5rem;
+        width: 15rem;
+        height: 10rem;
+        object-fit: cover;
+        float: left;
+    }
+
+    .info {
+        padding-left: 2rem;
+
+        h2 {
+            font-family: $font-standard;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-family: $font-standard;
+            font-weight: $weight-standard;
+            padding-top: 1rem;
+        }
+    }
+}
