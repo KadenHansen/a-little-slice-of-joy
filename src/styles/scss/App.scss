@@ -6,9 +6,15 @@
     padding: 0;
     text-decoration: none;
     list-style-type: none;
-
 }
 
 body {
     background-color: $joy-white;
+}
+
+.container {
+    background-color: white;
+    width: 90vw;
+    min-height: 100vh;
+    margin: auto;
 }

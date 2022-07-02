@@ -1,0 +1,9 @@
+@import "config";
+
+.footer {
+    height: 1rem;
+    width: 100vw;
+    background-color: $joy-pink;
+    position: fixed;
+    bottom: 0;
+}
