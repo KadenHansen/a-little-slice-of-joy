@@ -6,9 +6,7 @@ const img = require('../../styles/images/joshua-sukoff--4FxVVpIMyw-unsplash.jpg'
 export default function ProductTab() {
   return (
     <div className='product-tab'>
-        <div className="image">
-            <img src={img} alt="a variety of a dozen cookies stacked in a small white box"/>
-        </div>
+        <img src={img} alt="a variety of a dozen cookies stacked in a small white box"/>
         <div className="info">
             <h2>Boxes of Cookies</h2>
             <p>
