@@ -1,15 +1,20 @@
 @import "config";
 
+$navHeight: 3rem;
+
 .navbar {
     background-color: $joy-pink;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 4rem;
+    height: $navHeight;
+    width: 100%;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: fixed;
+    top: 0;
 
     ul {
-        position: fixed;
+        position: relative;
         display: flex;
 
         li {
@@ -19,21 +24,19 @@
 
             a {
                 position: relative;
-                height: 4rem;
+                height: $navHeight;
                 width: 10rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
 
                 i {
-                    // position: absolute;
                     font-size: 2rem;
                     color: white;
                     transition: 0.5s;
                 }
 
                 p {
-                    // position: static;
                     font-size: 2rem;
                     color: white;
                     transition: 0.5s;
@@ -44,7 +47,7 @@
 
             img {
                 position: relative;
-                height: 4rem;  
+                height: $navHeight;  
             }
         }
 
