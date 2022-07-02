@@ -1,0 +1,64 @@
+@import "config";
+
+.navbar {
+    background-color: $joy-pink;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 4rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    ul {
+        position: fixed;
+        display: flex;
+
+        li {
+            position: relative;
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+
+            a {
+                position: relative;
+                height: 4rem;
+                width: 10rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i {
+                    // position: absolute;
+                    font-size: 2rem;
+                    color: white;
+                    transition: 0.5s;
+                }
+
+                p {
+                    // position: static;
+                    font-size: 2rem;
+                    color: white;
+                    transition: 0.5s;
+                    padding-left: 0.5rem;
+                }
+
+            }
+
+            img {
+                position: relative;
+                height: 4rem;  
+            }
+        }
+
+        li.active a {
+            background-color: white;
+
+            i {
+                color: $joy-pink;
+            }
+
+            p {
+                color: $joy-pink;
+            }
+        }
+
+    }
+}
