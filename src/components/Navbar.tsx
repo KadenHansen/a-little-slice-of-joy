@@ -1,5 +1,5 @@
 import React from "react";
-import '../css/Navbar.css'
+import '../styles/css/Navbar.css'
 
 const handleClick = (e: any) => {
   const navbar: any | null = document.querySelector(".navbar")
@@ -8,7 +8,7 @@ const handleClick = (e: any) => {
   e.target.closest(".icon-set").classList.add("active")
 }
 
-const logo = require('../images/sliceOfJoyLogoWords.png')
+const logo = require('../styles/images/sliceOfJoyLogoWords.png')
 
 export default function Navbar() {
     return (
