@@ -10,7 +10,7 @@ const handleClick = (e: React.MouseEvent<HTMLLIElement>) => {
 
 const logo = require('../styles/images/sliceOfJoyLogoWords.png')
 
-export default function Navbar() {
+export default function Navbar(): JSX.Element {
     return (
         <nav className="navbar">
           <ul>

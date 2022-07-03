@@ -3,7 +3,7 @@ import '../../styles/css/LandingBanner.css'
 
 const image = require('../../styles/images/sera-iZgQKxuMRHc-unsplash.jpg')
 
-export default function LandingBanner() {
+export default function LandingBanner(): JSX.Element {
   return (
     <div className='landing-banner'>
         <img src={image} alt='A delicious array of desserts displayed on glass store-front shelves'/>

@@ -3,7 +3,7 @@ import '../../styles/css/ProductTab.css'
 
 const img = require('../../styles/images/joshua-sukoff--4FxVVpIMyw-unsplash.jpg')
 
-export default function ProductTab() {
+export default function ProductTab(): JSX.Element {
   return (
     <div className='product-tab'>
         <img src={img} alt="a variety of a dozen cookies stacked in a small white box"/>
