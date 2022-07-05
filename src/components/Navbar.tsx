@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../styles/css/Navbar.css'
 
-const handleClick = (e: any) => {
+const handleClick = (e: React.MouseEvent<HTMLLIElement>) => {
   e.preventDefault()
-  const navbar: any = document.querySelector(".navbar")
+  const navbar = document.querySelector(".navbar") as HTMLElement
   navbar.querySelector(".active")!.classList.remove("active");
-  e.target.closest(".icon-set")!.classList.add("active")
+  (e.target as HTMLElement).closest(".icon-set")!.classList.add("active")
 }
 
 const logo = require('../styles/images/sliceOfJoyLogoWords.png')
