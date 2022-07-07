@@ -8,6 +8,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Homepage from './components/Homepage/Homepage'
 import Gallery from './components/Gallery/Gallery'
+import EmployeePortal from './components/EmployeePortal/EmployeePortal'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Routes>
               <Route path='/' element={ <Homepage /> } />
               <Route path='/gallery' element={ <Gallery /> } />
+              <Route path='/admin' element={ <EmployeePortal /> } />
             </Routes>
           </div>
         <Footer />
