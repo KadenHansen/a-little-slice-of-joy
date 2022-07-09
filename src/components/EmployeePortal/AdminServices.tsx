@@ -2,6 +2,21 @@ import React, { useState } from 'react'
 import { Url } from 'url';
 
 export default function AdminServices() {
+    const [service, setService] = useState<{title: string, image: Url, description: string }> ({
+        title: '',
+        image: ('' as any) as Url,
+        description: ''
+    })
+
+    const handleChange = (e: any) => {
+        const { name, value } = e.target
+        setService((prevState) => ({
+            ...prevState,
+            [name]: value,
+        }))
+    }
+
+    //handle submit with fetch request
 
   return (
     <div className="services">
