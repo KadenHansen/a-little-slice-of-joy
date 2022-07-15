@@ -21,7 +21,13 @@ export default function ProductArray() {
         </div>
         <div className="cards-container">
         {data.map((item) => (
-            <GalleryCard key={item._id} itemName={item.itemName} image={item.image} imageDescription={item.imageDescription} category={item.category} />
+            <GalleryCard 
+              key={item._id} 
+              itemName={item.itemName} 
+              image={item.image} 
+              imageDescription={item.imageDescription} 
+              category={item.category} 
+            />
         ))}
         </div>
     </div>
