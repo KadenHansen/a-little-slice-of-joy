@@ -6,12 +6,11 @@
 
     .service-image {
         border-radius: 0.5rem;
-        max-width: 15rem;
+        min-width: 15rem;
         max-height: 10rem;
         object-fit: cover;
         float: left;
-        overflow: hidden;
-        border: 1px solid black;
+        overflow: clip;
 
         img {
             width: 100%;
