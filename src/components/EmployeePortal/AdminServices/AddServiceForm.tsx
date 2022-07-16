@@ -1,13 +1,16 @@
-import React, { useState } from 'react'
-import { Url } from 'url';
+import React, {useState} from 'react'
+import { Url } from 'url'
 
-export default function AdminServices() {
+export default function AddServiceForm() {
+
+    // define service as service object with empty values
     const [service, setService] = useState<{title: string, image: Url, description: string }> ({
         title: '',
         image: ('' as any) as Url,
         description: ''
     })
 
+    // set new values for service object on form change
     const handleChange = (e: any) => {
         const { name, value } = e.target
         setService((prevState) => ({
@@ -53,7 +56,7 @@ export default function AdminServices() {
                     <input type="text" id='description' name='description' onChange={handleChange}/>
                 </div>
                 <div className="submit-btn">
-                    <input type="submit" value="Submit"></input>
+                    <input type="submit" value="Add New Service"></input>
                 </div>
             </form>
         </div>
