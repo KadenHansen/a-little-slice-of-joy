@@ -1,0 +1,36 @@
+@import 'config';
+
+.admin-product-tab {
+    padding: 0.5rem;
+    display: flex;
+
+    .service-image {
+        border-radius: 0.5rem;
+        
+        img {
+            object-fit: cover;
+            float: left;
+            overflow: clip;
+            min-width: 7.5rem;
+            max-height: 5rem;
+            width: 100%;
+        }
+    }
+
+    .info {
+        padding-left: 1rem;
+
+        h2 {
+            font-family: $font-standard;
+            text-transform: uppercase;
+            font-size: small;
+        }
+
+        p {
+            font-family: $font-standard;
+            font-weight: $weight-standard;
+            font-size: small;
+            padding-top: 1rem;
+        }
+    }
+}
