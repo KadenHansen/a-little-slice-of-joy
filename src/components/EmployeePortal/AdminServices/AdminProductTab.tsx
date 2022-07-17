@@ -13,6 +13,13 @@ interface Service {
 
 export default function AdminProductTab(props: Service) {
 
+    // Access Delete Route for individual services
+    async function deleteService(serviceID: string) {
+        await fetch(`http://localhost:8000/services/${serviceID}`, {
+            method: "DELETE"
+        })
+    }
+
     return (
         <div className='admin-product-tab'>
             <div className="service-image">
@@ -25,7 +32,7 @@ export default function AdminProductTab(props: Service) {
             <button>
                 Edit
             </button>
-            <button>
+            <button onClick={()=> deleteService(props.id)}>
                 Delete
             </button>
         </div>
