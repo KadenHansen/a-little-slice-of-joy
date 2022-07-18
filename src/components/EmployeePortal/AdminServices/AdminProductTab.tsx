@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import '../../../styles/css/AdminProductTab.css'
 
 // Define service props object types
@@ -17,6 +16,7 @@ export default function AdminProductTab(props: Service) {
         description: '',
     })
 
+    // retrieve current document and set details to service variable
     useEffect(() => {
         const callBackendAPI = async () => {
           const response = await fetch(`http://localhost:8000/services/${props.id}`)
@@ -49,6 +49,7 @@ export default function AdminProductTab(props: Service) {
         })
     }
 
+    // update service variable to match user input
     const handleChange = (e: any) => {
         const { name, value } = e.target
         setService((prevState) => ({
