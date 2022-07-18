@@ -1,6 +1,4 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
-import { ObjectId } from 'mongodb'
 import '../../../styles/css/AdminProductTab.css'
 
 // Define service props object types

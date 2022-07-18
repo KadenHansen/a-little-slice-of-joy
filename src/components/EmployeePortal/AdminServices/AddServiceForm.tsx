@@ -22,7 +22,7 @@ export default function AddServiceForm() {
     //handle submit with fetch request
     const handleSubmit = async (e: any) => {
         e.preventDefault()
-        const res = await fetch('http://localhost:8000/services', {
+        await fetch('http://localhost:8000/services', {
           method: 'POST',
           body: JSON.stringify({
             title: service.title,
