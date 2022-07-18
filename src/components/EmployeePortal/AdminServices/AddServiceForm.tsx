@@ -19,7 +19,7 @@ export default function AddServiceForm() {
         }))
     }
 
-    //handle submit with fetch request
+    //handle submit with fetch request to add new document to services collection
     const handleSubmit = async (e: any) => {
         e.preventDefault()
         await fetch('http://localhost:8000/services', {
@@ -45,18 +45,36 @@ export default function AddServiceForm() {
             <form action='/' method='POST' onSubmit={handleSubmit}>
                 <div className="input-field">
                     <label htmlFor="title">Service:</label>
-                    <input type="text" id='title' name='title' onChange={handleChange}/>
+                    <input 
+                    type="text" 
+                    id='title' 
+                    name='title' 
+                    onChange={handleChange}
+                    />
                 </div>
                 <div className="input-field">
                     <label htmlFor="image">Image:</label>
-                    <input type="url" id='image' name='image' onChange={handleChange}/>
+                    <input 
+                    type="url" 
+                    id='image' 
+                    name='image' 
+                    onChange={handleChange}
+                    />
                 </div>
                 <div className="input-field">
                     <label htmlFor="description">Description:</label>
-                    <input type="text" id='description' name='description' onChange={handleChange}/>
+                    <input 
+                    type="text" 
+                    id='description' 
+                    name='description' 
+                    onChange={handleChange}
+                    />
                 </div>
                 <div className="submit-btn">
-                    <input type="submit" value="Add New Service"></input>
+                    <input 
+                    type="submit" 
+                    value="Add New Service"
+                    />
                 </div>
             </form>
         </div>
