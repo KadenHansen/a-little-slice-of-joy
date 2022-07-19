@@ -42,7 +42,7 @@ export default function AddServiceForm() {
         <h2 className='header'>Services</h2>
         <div className="add-service">
             <h3>Add Service</h3>
-            <form action='/' method='POST' onSubmit={handleSubmit}>
+            <form method='POST' onSubmit={handleSubmit}>
                 <div className="input-field">
                     <label htmlFor="title">Service:</label>
                     <input 
