@@ -4,5 +4,5 @@ A Little Slice of Joy is a catering bakery business owned and operated by Joy Ka
 ## Running
 * run `npm install`
 * run `npm run scss-compile` to compile page styles
-* go to [A Little Slice of Joy Server] and follow the instructions for starting the server
+* go to [A Little Slice of Joy Server](https://github.com/KadenHansen/I_Bonsai_Server.git) and follow the instructions for starting the server
 * run `npm start` to view the webpage in your browser
