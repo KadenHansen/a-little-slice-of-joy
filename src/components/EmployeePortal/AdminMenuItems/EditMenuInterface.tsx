@@ -18,7 +18,7 @@ export default function EditMenuInterface() {
         <div className="header">
             <h3>Edit Menu Items</h3>
         </div>
-        <div className="cards-container">
+        <div className="cards-container" style={{display: "flex", flexWrap: "wrap"}}>
         {data.map((item) => (
             <AdminMenuEdit 
               key={item._id} 
