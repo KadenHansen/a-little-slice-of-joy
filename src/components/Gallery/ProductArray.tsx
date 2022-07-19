@@ -7,7 +7,7 @@ export default function ProductArray() {
 
     useEffect(() => {
         const callBackendAPI = async () => {
-          const response = await fetch('http://localhost:8000/gallery')
+          const response = await fetch('http://localhost:8000/menu')
           const body = await response.json()
           setData(body)
         }
