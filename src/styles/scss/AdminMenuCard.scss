@@ -1,0 +1,16 @@
+@import "config";
+
+.admin-menu-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    
+    img {
+        width: 6rem;
+        min-height: 7rem;
+        max-height: 7rem;
+        object-fit: cover;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+}
