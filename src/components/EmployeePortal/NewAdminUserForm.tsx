@@ -6,6 +6,7 @@ export default function NewAdminUserForm() {
 	const [user, setUser] = useState({
 		username: '',
 		password: '',
+		email: '',
 		firstName: '',
 		lastName: ''
 	})
@@ -30,6 +31,7 @@ export default function NewAdminUserForm() {
 			body: JSON.stringify({
                 username: user.username,
                 password: user.password,
+				email: user.email,
                 firstName: user.firstName,
                 lastName: user.lastName
             })
@@ -89,6 +91,18 @@ export default function NewAdminUserForm() {
 						className="form-control"
 						id="password"
 						name="password"
+					/>
+				</div>
+				<div className="col-sm-6 form-group">
+					<label htmlFor="email">Email</label>
+					<input 
+						type="email"
+						required
+						value={user.email}
+						onChange={handleChange}
+						className="form-control"
+						id="email"
+						name="email"
 					/>
 				</div>
 				<input className="btn btn-primary" type="submit" value="Sign Up" />
